@@ -24,7 +24,7 @@
 {/if} -->
 
 
-<div class="recipe max-w-3xl mx-auto">
+<div class="recipe max-w-3xl mx-auto mb-14">
   <slot />
 </div>
 

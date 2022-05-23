@@ -21,12 +21,14 @@
 export let currentRoute
 </script>
 
-<Header />
+<div class="flex flex-col h-screen justify-between">
+  <Header />
 
-{#key currentRoute}
-  <main class="max-w-4xl mx-auto px-3">
-    <slot />
-  </main>
-{/key}
+  {#key currentRoute}
+    <main class="max-w-4xl mx-auto mb-auto px-3">
+      <slot />
+    </main>
+  {/key}
 
-<Footer />
+  <Footer />
+</div>
