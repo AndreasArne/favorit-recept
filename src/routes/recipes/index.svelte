@@ -37,15 +37,13 @@ export const load = async ({ fetch }) => {
 
   <div class="mt-8 grid lg:grid-cols-3 gap-10">
     {#each filteredRecipes as recipe, i (i)}
-      <div class="card hover:shadow-lg" in:fade out:scale|local animate:flip={{duration: 800}}>
-        <a href={recipe.path}>
-        <div class="m-4 text-center">
+    <a class="card hover:shadow-lg" href={recipe.path} in:fade out:scale|local animate:flip={{duration: 800}}>
+        <div class="mx-auto text-center flex flex-col justify-center h-full">
           <span class="font-bold">{recipe.meta.title}</span>
-          <span class="block text-gray-sm">Recept av {recipe.meta.author}</span>
+          <span class=" block text-gray-sm">Recept av {recipe.meta.author}</span>
           </div>
-        </a>
+      </a>
           <!-- Published {recipe.meta.date} -->
-        </div>
       {/each}
   </div>
 </div>
