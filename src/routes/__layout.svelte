@@ -24,9 +24,9 @@ export let currentRoute
 <Header />
 
 {#key currentRoute}
-  <main class="max-w-4xl mx-auto">
+  <main class="max-w-4xl mx-auto px-3">
     <slot />
   </main>
 {/key}
 
-<Footer />>
+<Footer />
