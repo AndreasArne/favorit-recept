@@ -9,7 +9,7 @@ author: "Agne"
 
 # Agnes Jägargryta
 
-4 portioner
+Blir 4 portioner.
 
 
 ### Ingredienser

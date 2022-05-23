@@ -37,7 +37,7 @@ export const load = async ({ fetch }) => {
 
   <div class="mt-8 grid lg:grid-cols-3 gap-10">
     {#each filteredRecipes as recipe, i (i)}
-      <div class="card hover:shadow-lg" in:fade out:scale|local animate:flip={{duration: 500}}>
+      <div class="card hover:shadow-lg" in:fade out:scale|local animate:flip={{duration: 800}}>
         <a href={recipe.path}>
         <div class="m-4 text-center">
           <span class="font-bold">{recipe.meta.title}</span>
